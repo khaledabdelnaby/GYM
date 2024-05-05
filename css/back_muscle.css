@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl; /* إضافة هذا السطر لتغيير اتجاه الكتابة إلى اليمين */
+
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+
+}
+
+nav a {
+
+    position: relative;
+    text-decoration: none;
+    color: #909090;
+    font-weight: bold;
+    transition: .3s;
+
+}
+nav li a::before{
+    content: '';
+    position: absolute;
+    right: 0%;
+    height: 3px;
+    width: 0%;
+    background-color: #397cff;
+    bottom: -7px;
+    transition: .3s;
+
+}
+nav a:hover{
+    color: white;
+}
+nav a:hover::before{
+    width: 100%;
+}
+section {
+    padding: 20px;
+    text-align: right;
+}
+
+p{
+    font-size: 20px;
+
+}
+.header {
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+ .exercise {
+    margin-right: 200px;
+    color: black;
+    width: 300px;
+    margin: 1em;
+    background-color: #fff;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.exercise:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+.exercise img {
+    width: 100%;
+    height: auto;
+}
+
+.exercise h3 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.exercise p {
+    padding: 0 1em;
+    text-align: center;
+}
+
+
+footer {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* يجعله يظهر في الأسفل دون الحاجة لتثبيته بوضعية ثابتة */
+
+}
+/* .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+} */
+h2{
+    text-align: center;
+}
+
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    /* background-color: #edeff1; */
+    color: #397cff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+/* .scroll-to-top:hover {
+    background-color: #2980b9;
+} */
+
+.icon_web{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}

@@ -1,0 +1,211 @@
+
+body {
+    /* direction: ltr; */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    overflow-x: hidden;
+}
+
+header {
+
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #909090;
+    font-weight: bold;
+    transition: .3s;
+
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    right: 0%;
+    height: 3px;
+    width: 0%;
+    background-color: #397cff;
+    bottom: -7px;
+    transition: .3s;
+
+}
+nav a:hover{
+    color: white;
+}
+nav a:hover::before{
+    width: 100%;
+} 
+section {
+    padding: 20px;
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* يجعله يظهر في الأسفل دون الحاجة لتثبيته بوضعية ثابتة */
+
+}
+nav input[type="text"] {
+    padding: 5px ;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+nav button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+.global,
+.body{
+    margin: 0px 100px;
+}
+#language-buttons {
+    margin-top: 10px;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    /* background-color: #edeff1; */
+    color: #397cff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ /* .scroll-to-top:hover {
+    background-color: #f2f4f5;
+}  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column; /*تأكيد على توجيه العناصر عمودياً */
+    min-height: 100vh;
+}
+h1, h2, h3 {
+    color:rgb(255, 255, 255);
+}
+
+#exercise-guide {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+   text-decoration: none;
+   color: #010101;  
+
+}
+.muscle {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+/* p{
+    margin-right: 13pc;
+    margin-top: -3pc;
+} */
+h3{
+    
+        margin-right: 13pc;
+        margin-top: -3pc;
+}
+h2 {
+    text-align: center;
+    margin-bottom:-3pc ;
+}
+.muscle:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.muscle h1,h2,h3{
+    color:rgb(0%, 0%, 0%);
+
+}
+img {
+    width: 178px;
+    height: 141px;
+    margin-right: 10px;
+}
+
+.icon_web{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+/* css for vertical navigation */
+
+/* css search navigation */
+
+.element {
+    
+    width: 100%;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 38px 0px;
+    border-color: transparent transparent #397cff transparent;
+  }
+  
+  .button_sorce{
+    height: 30px;
+    width: 8pc;
+    color: #010101;
+    margin: 10px;
+    /* box-shadow: 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    margin-top: -3pc ;
+   
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  
+  }
+  .button_sorce:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    background-color: #397cff;
+}
